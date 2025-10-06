@@ -1,0 +1,11 @@
+.app {
+  height: 100dvh;
+  background-size: cover;
+  width: 100vw;
+  background-position: center;
+  margin: 0;
+  
+  overscroll-behavior-y: none;
+  display: flex;
+  position: relative;
+}

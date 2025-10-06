@@ -1,0 +1,57 @@
+.cityList {
+  width: 100%;
+  height: 65vh;              /* desktop height */
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.cityList::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* animation container */
+.animate {
+  width: 400px;
+  max-width: 90%;   
+  margin: 2rem auto;  
+  display: block;
+}
+
+
+@media (max-width: 600px) {
+  .cityList {
+    height: 60vh;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .animate {
+    width: 200px;
+    margin-bottom: 22rem;
+  }
+}
+@media (max-width: 480px) {
+  .cityList {
+    max-height: 35vh;
+    gap: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 32rem;
+    width: 175px;
+   
+    
+    
+  }
+
+  .animate {
+    width: 170px;
+    margin-bottom: 35rem;
+  }
+}
+
+

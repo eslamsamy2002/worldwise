@@ -1,0 +1,117 @@
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; 
+  padding: 1rem 0;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;          
+  align-items: center;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navLinks a:link,
+.navLinks a:visited {
+  text-decoration: none;
+  color: var(--color-light--2);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: var(--color-brand--2);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+.navLinks a:global(.active) {
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--0);
+  padding: 0.6rem 1.5rem;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+.ctaLink {
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--0);
+  padding: 0.8rem 2rem;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.menuBtn {
+  font-size: 2.2rem;
+  background: none;
+  border: none;
+  color: var(--color-light--2);
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* show hamburger */
+  .menuBtn {
+    display: block;
+  }
+   .navLinks a:hover::after {
+    width: 50%;   /* only half underline in hamburger menu */
+    left: 0;      /* stays aligned to the left */
+  }
+
+  .navLinks {
+    display: none;             
+    position: absolute;
+    top: calc(100% + 0.5rem);  
+    right: 1rem;
+    background: rgba(36, 42, 46, 0.98);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.2rem;
+    gap: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    z-index: 1000;
+    min-width: 180px;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .navLinks li {
+    width: 100%;
+  }
+
+  .navLinks a {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+    text-transform: none; 
+  }
+
+  .ctaLink {
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+  }
+}

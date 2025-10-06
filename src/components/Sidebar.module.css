@@ -1,0 +1,35 @@
+.sidebar {
+  flex-basis: 56rem;          /* default: desktop width */
+  flex-shrink: 0;             /* don’t shrink on big screens */
+  background-color: var(--color-dark--1);
+  padding: 3rem 5rem 3.5rem 5rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;             /* full height */
+}
+.copyright{
+  margin-top: 16rem;
+  margin-bottom: 5rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    flex-basis: 22rem;     /* sidebar takes full width */
+    height: auto;        /* allow content to grow */
+    
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+  }
+
+  .copyright{
+  margin-top: 0rem;
+}
+}
+
+

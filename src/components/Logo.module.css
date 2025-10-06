@@ -1,0 +1,36 @@
+.logoLink {
+  text-decoration: none !important;  /* remove underline completely */
+  border: none !important;           /* remove border if applied */
+  outline: none !important;          /* remove focus outline */
+  color: inherit;                    /* inherit text color */
+}
+
+.logoLink:hover,
+.logoLink:focus,
+.logoLink:active {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.logo {
+  height: 5.2rem;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+.logoLink {
+  text-decoration: none;
+  color: inherit; /* keeps text (if any) the same color */
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    height: 4.2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo {
+    height: 3.2rem;
+  }
+}
