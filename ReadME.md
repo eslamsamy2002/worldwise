@@ -20,6 +20,14 @@ It includes **authentication, protected routes, and CRUD operations** on cities,
 
 ---
 
+## 🎥 Demo  
+
+🔗 [Live Demo](https://worldwise-eslam.netlify.app/)  
+
+![App Demo](worldwise.gif)
+
+---
+
 ## 📂 Project Structure
 
 ```
@@ -97,15 +105,6 @@ Use the demo account:
 Email: jack@example.com
 Password: qwerty
 ```
-
----
-
-## 🎥 Demo
-
-//![App Demo](./worldwise.gif)
-
-
-
 ---
 
 ##  Contributing
