@@ -102,7 +102,7 @@ Password: qwerty
 
 ## 🎥 Demo
 
-//![App Demo](./demo/demo.gif)
+//![App Demo](./worldwise.gif)
 
 
 
