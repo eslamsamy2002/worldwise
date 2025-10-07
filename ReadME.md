@@ -24,7 +24,7 @@ It includes **authentication, protected routes, and CRUD operations** on cities,
 
 🔗 [Live Demo](https://worldwise-eslam.netlify.app/)  
 
-![App Demo](worldwise.gif)
+![App Demo](public/worldwise.gif)
 
 ---
 
