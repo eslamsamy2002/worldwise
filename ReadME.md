@@ -5,32 +5,37 @@ It includes **authentication, protected routes, and CRUD operations** on cities,
 
 ---
 
+## 🎥 Demo  
+
+🔗 [Live Demo](https://worldwise-eslam.netlify.app/)  
+
+[![App Demo](public/worldwise.gif)](https://worldwise-eslam.netlify.app/)
+
+---
+
 ## 🚀 Features
 
 * 🔑 **Authentication system** (fake auth with login/logout).
 * 🏙 **Cities management** – add, view, and delete cities.
 * 🌎 **Countries list**.
+* 🗺 **Interactive maps** – powered by the **Leaflet library** to visualize cities & countries.
+  
+  ![Map View](public/leaflet.png)
+
 * 🔒 **Protected routes** – only logged-in users can access the app.
 * ⚡ **Context + Reducer state management** (`AuthContext`, `CitiesContext`).
 * 🎨 Modular React component structure with reusable layouts.
 * 🌀 **Loading states** with full-page spinner.
 * 🛡 Error handling with graceful fallbacks.
-✨ Beautiful animations (Lottie-powered).
-📱 Responsive design – works seamlessly on desktop & mobile.
-
----
-
-## 🎥 Demo  
-
-🔗 [Live Demo](https://worldwise-eslam.netlify.app/)  
-
-![App Demo](public/worldwise.gif)
+* ✨ Beautiful animations (Lottie-powered).
+* 📱 Responsive design – works seamlessly on desktop & mobile.
 
 ---
 
 ## 📂 Project Structure
 
 ```
+
 src/
 │── components/
 │   ├── CityList.jsx
@@ -54,28 +59,29 @@ src/
 │
 │── App.jsx
 │── index.jsx
-```
+
+````
 
 ---
 
-##  Tech Stack
+## 🛠 Tech Stack
 
 * **React 18**
 * **React Router v6**
 * **Context API + useReducer**
 * **Fake Authentication (demo user)**
 * **JSON Server (mock API for cities & countries)**
+* **Leaflet.js** – interactive maps integration
 
 ---
 
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**
-
    ```bash
    git clone https://github.com/yourusername/worldwide-explorer.git
    cd worldwide-explorer
-   ```
+````
 
 2. **Install dependencies**
 
@@ -97,7 +103,7 @@ src/
 
 ---
 
-## Login Credentials
+## 🔑 Login Credentials
 
 Use the demo account:
 
@@ -105,9 +111,10 @@ Use the demo account:
 Email: jack@example.com
 Password: qwerty
 ```
+
 ---
 
-##  Contributing
+## 🤝 Contributing
 
 Contributions are welcome! If you’d like to add new features, fix bugs, or improve docs:
 
@@ -118,14 +125,12 @@ Contributions are welcome! If you’d like to add new features, fix bugs, or imp
 
 ---
 
-##  License
+## 📜 License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-✨ Built with ❤️ using React & Context API
-
----
+✨ Built with ❤️ using React, Leaflet & Context API
 
 
